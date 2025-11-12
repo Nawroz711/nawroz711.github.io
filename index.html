@@ -33,11 +33,6 @@
                 <div class="nav__toggle" id="nav-toggle">
                     <i class='bx bx-menu'></i>
                 </div>
-
-                <!-- Theme Toggle -->
-                <div class="theme-toggle" id="theme-toggle">
-                    <i class='bx bx-sun'></i>
-                </div>
             </nav>
         </header>
 
@@ -57,17 +52,15 @@
                 </div>
 
                 <div class="home__img">
-                    <div class="profile-container">
-                        <div class="profile-avatar">
-                            <i class="fas fa-user-tie"></i>
-                        </div>
-                        <div class="profile-code">
-                            <div class="code-line"><div class="developer"></div>
-                            <div class="code-line indent"><h1>Nawroz Ali</h1></div>
-                            <div class="code-line indent"><p>Software Developer</p></div>
-                            <div class="code-line"></div></div>
-                        </div>
-                    </div>
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            <image class="home__blob-img" x="50" y="60" href="assets/img/perfil.png"/>
+                        </g>
+                    </svg>
                 </div>
             </section>
 
@@ -112,256 +105,117 @@
 
                 <div class="skills__container bd-grid">
                     <div>
-                        <h2 class="skills__subtitle">Technical Skills</h2>
+                        <h2 class="skills__subtitle">Profesional Skills</h2>
                         <p class="skills__text">Proficient in modern web development technologies with expertise in both frontend and backend development.</p>
-
-                        <!-- Frontend Skills -->
-                        <h3 style="color: var(--first-color); margin: 2rem 0 1rem; text-align: left;">Frontend Development</h3>
-                        <div class="skills-modern">
-                            <div class="skill-card">
-                                <div class="skill-header">
-                                    <i class='bx bxl-javascript skill-icon-modern'></i>
-                                    <div class="skill-info">
-                                        <h4>JavaScript</h4>
-                                        <span class="skill-level">90%</span>
-                                    </div>
-                                </div>
-                                <div class="skill-progress-bar">
-                                    <div class="skill-progress-fill" style="width: 90%"></div>
-                                </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-html5 skills__icon'></i>
+                                <span class="skills__name">HTML5</span>
                             </div>
+                            <div class="skills__bar skills__html">
 
-                            <div class="skill-card">
-                                <div class="skill-header">
-                                    <i class='bx bxl-react skill-icon-modern'></i>
-                                    <div class="skill-info">
-                                        <h4>React</h4>
-                                        <span class="skill-level">88%</span>
-                                    </div>
-                                </div>
-                                <div class="skill-progress-bar">
-                                    <div class="skill-progress-fill" style="width: 88%"></div>
-                                </div>
                             </div>
-
-                            <div class="skill-card">
-                                <div class="skill-header">
-                                    <i class='bx bxl-vuejs skill-icon-modern'></i>
-                                    <div class="skill-info">
-                                        <h4>Vue.js</h4>
-                                        <span class="skill-level">82%</span>
-                                    </div>
-                                </div>
-                                <div class="skill-progress-bar">
-                                    <div class="skill-progress-fill" style="width: 82%"></div>
-                                </div>
-                            </div>
-
-                            <div class="skill-card">
-                                <div class="skill-header">
-                                    <i class='bx bxl-html5 skill-icon-modern'></i>
-                                    <div class="skill-info">
-                                        <h4>HTML5 & CSS3</h4>
-                                        <span class="skill-level">95%</span>
-                                    </div>
-                                </div>
-                                <div class="skill-progress-bar">
-                                    <div class="skill-progress-fill" style="width: 95%"></div>
-                                </div>
+                            <div>
+                                <span class="skills__percentage">95%</span>
                             </div>
                         </div>
-
-                        <!-- Backend Skills -->
-                        <h3 style="color: var(--first-color); margin: 2rem 0 1rem; text-align: left;">Backend Development</h3>
-                        <div class="skills-modern">
-                            <div class="skill-card">
-                                <div class="skill-header">
-                                    <i class='bx bxl-php skill-icon-modern'></i>
-                                    <div class="skill-info">
-                                        <h4>PHP & Laravel</h4>
-                                        <span class="skill-level">90%</span>
-                                    </div>
-                                </div>
-                                <div class="skill-progress-bar">
-                                    <div class="skill-progress-fill" style="width: 90%"></div>
-                                </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-css3 skills__icon'></i>
+                                <span class="skills__name">CSS3</span>
                             </div>
+                            <div class="skills__bar skills__css">
 
-                            <div class="skill-card">
-                                <div class="skill-header">
-                                    <i class='bx bx-data skill-icon-modern'></i>
-                                    <div class="skill-info">
-                                        <h4>PostgreSQL & MySQL</h4>
-                                        <span class="skill-level">85%</span>
-                                    </div>
-                                </div>
-                                <div class="skill-progress-bar">
-                                    <div class="skill-progress-fill" style="width: 85%"></div>
-                                </div>
                             </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-javascript skills__icon' ></i>
+                                <span class="skills__name">JAVASCRIPT</span>
+                            </div>
+                            <div class="skills__bar skills__js">
 
-                            <div class="skill-card">
-                                <div class="skill-header">
-                                    <i class='bx bx-cloud skill-icon-modern'></i>
-                                    <div class="skill-info">
-                                        <h4>Supabase</h4>
-                                        <span class="skill-level">85%</span>
-                                    </div>
-                                </div>
-                                <div class="skill-progress-bar">
-                                    <div class="skill-progress-fill" style="width: 85%"></div>
-                                </div>
+                            </div>
+                            <div>
+                                <span class="skills__percentage">65%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-paint skills__icon'></i>
+                                <span class="skills__name">UX/UI</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
                             </div>
                         </div>
                     </div>
 
                     <div>
-                        <div class="skills-stats">
-                            <div class="stat-card">
-                                <div class="stat-number">12+</div>
-                                <div class="stat-label">Technologies</div>
-                            </div>
-                            <div class="stat-card">
-                                <div class="stat-number">2+</div>
-                                <div class="stat-label">Years Experience</div>
-                            </div>
-                            <div class="stat-card">
-                                <div class="stat-number">5+</div>
-                                <div class="stat-label">Projects Completed</div>
-                            </div>
-                        </div>
+                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
                     </div>
                 </div>
             </section>
 
             <!--===== WORK =====-->
             <section class="work section" id="work">
-                <h2 class="section-title">Projects</h2>
+                <h2 class="section-title">Work</h2>
 
                 <div class="work__container bd-grid">
-                    <div class="project-card-modern">
-                        <div class="project-image">
-                            <img src="https://via.placeholder.com/400x250/224/ffffff?text=Baashga" alt="Baashga Project">
-                            <div class="project-overlay">
-                                <a href="https://www.baashga.com" target="_blank" class="project-link">
-                                    <i class='bx bx-link-external'></i>
-                                </a>
-                            </div>
+                    <a href="https://www.baashga.com" target="_blank" class="work__img">
+                        <img src="assets/img/work1.jpg" alt="Baashga - Gym Management System">
+                        <div class="work__overlay">
+                            <h3>Baashga</h3>
+                            <p>Gym management system</p>
+                            <span class="work__link">www.baashga.com</span>
                         </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Baashga</h3>
-                            <p class="project-description">Gym management system with membership tracking, workout plans, and payment processing.</p>
-                            <div class="project-tech">
-                                <span class="tech-badge">PHP</span>
-                                <span class="tech-badge">Laravel</span>
-                                <span class="tech-badge">PostgreSQL</span>
-                                <span class="tech-badge">Supabase</span>
-                            </div>
+                    </a>
+                    <a href="https://www.karwwan.com" target="_blank" class="work__img">
+                        <img src="assets/img/work2.jpg" alt="Karwwan - Car Marketplace">
+                        <div class="work__overlay">
+                            <h3>Karwwan</h3>
+                            <p>Car marketplace platform</p>
+                            <span class="work__link">www.karwwan.com</span>
                         </div>
-                    </div>
-
-                    <div class="project-card-modern">
-                        <div class="project-image">
-                            <img src="https://via.placeholder.com/400x250/224/ffffff?text=Karwwan" alt="Karwwan Project">
-                            <div class="project-overlay">
-                                <a href="https://www.karwwan.com" target="_blank" class="project-link">
-                                    <i class='bx bx-link-external'></i>
-                                </a>
-                            </div>
+                    </a>
+                    <a href="https://www.emllak.com" target="_blank" class="work__img">
+                        <img src="assets/img/work3.jpg" alt="Emllak - Real Estate Platform">
+                        <div class="work__overlay">
+                            <h3>Emllak</h3>
+                            <p>Real estate platform</p>
+                            <span class="work__link">www.emllak.com</span>
                         </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Karwwan</h3>
-                            <p class="project-description">Complete marketplace for buying and selling cars online with advanced search and filtering.</p>
-                            <div class="project-tech">
-                                <span class="tech-badge">PHP</span>
-                                <span class="tech-badge">Laravel</span>
-                                <span class="tech-badge">PostgreSQL</span>
-                                <span class="tech-badge">Supabase</span>
-                            </div>
+                    </a>
+                    <a href="https://www.rms.com" target="_blank" class="work__img">
+                        <img src="assets/img/work4.jpg" alt="OXUS Car Rental">
+                        <div class="work__overlay">
+                            <h3>OXUS Car Rental</h3>
+                            <p>UK-based car rental</p>
+                            <span class="work__link">www.rms.com</span>
                         </div>
-                    </div>
-
-                    <div class="project-card-modern">
-                        <div class="project-image">
-                            <img src="https://via.placeholder.com/400x250/224/ffffff?text=Emllak" alt="Emllak Project">
-                            <div class="project-overlay">
-                                <a href="https://www.emllak.com" target="_blank" class="project-link">
-                                    <i class='bx bx-link-external'></i>
-                                </a>
-                            </div>
+                    </a>
+                    <a href="https://www.alhawas2p.com" target="_blank" class="work__img">
+                        <img src="assets/img/work5.jpg" alt="S2P Procurement System">
+                        <div class="work__overlay">
+                            <h3>S2P</h3>
+                            <p>Procurement management</p>
+                            <span class="work__link">www.alhawas2p.com</span>
                         </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Emllak</h3>
-                            <p class="project-description">Real estate platform for property listings, virtual tours, and seamless transactions.</p>
-                            <div class="project-tech">
-                                <span class="tech-badge">PHP</span>
-                                <span class="tech-badge">Laravel</span>
-                                <span class="tech-badge">PostgreSQL</span>
-                                <span class="tech-badge">Supabase</span>
-                            </div>
+                    </a>
+                    <a href="https://github.com/nawroz" target="_blank" class="work__img">
+                        <img src="assets/img/work6.jpg" alt="GitHub Repository">
+                        <div class="work__overlay">
+                            <h3>More Projects</h3>
+                            <p>GitHub repositories</p>
+                            <span class="work__link">github.com/nawroz</span>
                         </div>
-                    </div>
-
-                    <div class="project-card-modern">
-                        <div class="project-image">
-                            <img src="https://via.placeholder.com/400x250/224/ffffff?text=OXUS" alt="OXUS Car Rental Project">
-                            <div class="project-overlay">
-                                <a href="https://www.rms.com" target="_blank" class="project-link">
-                                    <i class='bx bx-link-external'></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">OXUS Car Rental</h3>
-                            <p class="project-description">UK-based car rental platform with booking system, fleet management, and payment gateway.</p>
-                            <div class="project-tech">
-                                <span class="tech-badge">PHP</span>
-                                <span class="tech-badge">Laravel</span>
-                                <span class="tech-badge">PostgreSQL</span>
-                                <span class="tech-badge">Supabase</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card-modern">
-                        <div class="project-image">
-                            <img src="https://via.placeholder.com/400x250/224/ffffff?text=S2P" alt="S2P Project">
-                            <div class="project-overlay">
-                                <a href="https://www.alhawas2p.com" target="_blank" class="project-link">
-                                    <i class='bx bx-link-external'></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">S2P</h3>
-                            <p class="project-description">Enterprise procurement management system with vendor management and approval workflows.</p>
-                            <div class="project-tech">
-                                <span class="tech-badge">PHP</span>
-                                <span class="tech-badge">Laravel</span>
-                                <span class="tech-badge">PostgreSQL</span>
-                                <span class="tech-badge">Supabase</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card-modern">
-                        <div class="project-image">
-                            <img src="https://via.placeholder.com/400x250/224/ffffff?text=GitHub" alt="More Projects">
-                            <div class="project-overlay">
-                                <a href="https://github.com/nawroz" target="_blank" class="project-link">
-                                    <i class='bx bxl-github'></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">More Projects</h3>
-                            <p class="project-description">Check out my GitHub repository for additional projects and contributions.</p>
-                            <div class="project-tech">
-                                <span class="tech-badge">GitHub</span>
-                                <span class="tech-badge">Open Source</span>
-                            </div>
-                        </div>
-                    </div>
+                    </a>
                 </div>
             </section>
 
