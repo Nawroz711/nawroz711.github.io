@@ -110,8 +110,8 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: #fff;
-  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+  background-color: var(--second-color);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 }
 
 /*===== NAV =====*/
@@ -154,10 +154,10 @@ img {
   background-color: var(--first-color);
 }
 .nav__logo {
-  color: var(--second-color);
+  color: #fff;
 }
 .nav__toggle {
-  color: var(--second-color);
+  color: #fff;
   font-size: 1.5rem;
   cursor: pointer;
 }
@@ -572,7 +572,7 @@ img {
     display: none;
   }
   .nav__link {
-    color: var(--second-color);
+    color: #fff;
   }
   .home {
     padding: 8rem 0 2rem;
@@ -613,17 +613,4 @@ img {
   .home__img {
     width: 450px;
   }
-}
-
-/* ===== THEME TOGGLE =====*/
-.theme-toggle {
-  color: var(--second-color);
-  font-size: 1.2rem;
-  cursor: pointer;
-  margin-left: var(--mb-4);
-  transition: color 0.3s ease;
-}
-
-.theme-toggle:hover {
-  color: var(--first-color);
 }
