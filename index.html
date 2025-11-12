@@ -33,6 +33,11 @@
                 <div class="nav__toggle" id="nav-toggle">
                     <i class='bx bx-menu'></i>
                 </div>
+
+                <!-- Expandable Menu Button -->
+                <div class="nav__expand" id="nav-expand">
+                    <i class='bx bx-chevron-down'></i>
+                </div>
             </nav>
         </header>
 
@@ -96,65 +101,48 @@
                     <div>
                         <h2 class="skills__subtitle">Profesional Skills</h2>
                         <p class="skills__text">Proficient in modern web development technologies with expertise in both frontend and backend development.</p>
-                        <div class="skills__data">
-                            <div class="skills__names">
+
+                        <div class="skills__simple">
+                            <div class="skill__item">
                                 <i class='bx bxl-html5 skills__icon'></i>
                                 <span class="skills__name">HTML5</span>
                             </div>
-                            <div class="skills__bar skills__html">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">95%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
+                            <div class="skill__item">
                                 <i class='bx bxl-css3 skills__icon'></i>
                                 <span class="skills__name">CSS3</span>
                             </div>
-                            <div class="skills__bar skills__css">
-
+                            <div class="skill__item">
+                                <i class='bx bxl-javascript skills__icon'></i>
+                                <span class="skills__name">JavaScript</span>
                             </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
+                            <div class="skill__item">
+                                <i class='bx bxl-react skills__icon'></i>
+                                <span class="skills__name">React</span>
                             </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-javascript skills__icon' ></i>
-                                <span class="skills__name">JAVASCRIPT</span>
+                            <div class="skill__item">
+                                <i class='bx bxl-vuejs skills__icon'></i>
+                                <span class="skills__name">Vue.js</span>
                             </div>
-                            <div class="skills__bar skills__js">
-
+                            <div class="skill__item">
+                                <i class='bx bxl-php skills__icon'></i>
+                                <span class="skills__name">PHP</span>
                             </div>
-                            <div>
-                                <span class="skills__percentage">65%</span>
+                            <div class="skill__item">
+                                <i class='bx bxl-laravel skills__icon'></i>
+                                <span class="skills__name">Laravel</span>
                             </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">UX/UI</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
+                            <div class="skill__item">
+                                <i class='bx bx-data skills__icon'></i>
+                                <span class="skills__name">PostgreSQL</span>
                             </div>
                         </div>
-                    </div>
-
-                    <div>
-                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
                     </div>
                 </div>
             </section>
 
-            <!--===== WORK =====-->
-            <section class="work section" id="work">
-                <h2 class="section-title">Work</h2>
+            <!--===== PROJECTS =====-->
+            <section class="work section projects-window" id="work">
+                <h2 class="section-title">Projects</h2>
 
                 <div class="work__container bd-grid">
                     <a href="https://www.baashga.com" target="_blank" class="work__img">
@@ -242,13 +230,9 @@
                         </div>
                     </div>
 
-                    <form action="https://formspree.io/f/your-form-id" method="POST" class="contact__form">
-                        <input type="text" name="name" placeholder="Your Name" class="contact__input" required>
-                        <input type="email" name="email" placeholder="Your Email" class="contact__input" required>
-                        <input type="text" name="subject" placeholder="Subject" class="contact__input" required>
-                        <textarea name="message" cols="0" rows="10" placeholder="Your Message" class="contact__input" required></textarea>
-                        <input type="submit" value="Send Message" class="contact__button button">
-                    </form>
+                    <div class="contact__form">
+                        <p class="contact__note">Feel free to reach out through the contact information above. I'm always happy to discuss new opportunities and collaborations!</p>
+                    </div>
                 </div>
             </section>
         </main>

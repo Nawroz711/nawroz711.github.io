@@ -47,8 +47,8 @@ body {
   margin: var(--header-height) 0 0 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  color: var(--second-color);
-  background-color: #0a0a0a;
+  color: #dedede;
+  background-color: #212121;
 }
 
 h1, h2, p {
@@ -75,7 +75,7 @@ img {
 .section-title {
   position: relative;
   font-size: var(--h2-font-size);
-  color: var(--first-color);
+  color: #00f050;
   margin-top: var(--mb-2);
   margin-bottom: var(--mb-4);
   text-align: center;
@@ -95,7 +95,7 @@ img {
 .section {
   padding-top: 3rem;
   padding-bottom: 2rem;
-  background-color: #0a0a0a;
+  background-color: #212121;
 }
 
 /*===== LAYOUT =====*/
@@ -153,7 +153,7 @@ img {
   height: 0.18rem;
   left: 0;
   top: 2rem;
-  background-color: var(--first-color);
+  background-color: #00f050;
 }
 .nav__logo {
   color: #fff;
@@ -172,7 +172,7 @@ img {
   height: 0.18rem;
   left: 0;
   top: 2rem;
-  background-color: var(--first-color);
+  background-color: #00f050;
 }
 
 /*=== Show menu ===*/
@@ -185,7 +185,7 @@ img {
   position: relative;
   row-gap: 5rem;
   padding: 4rem 0 5rem;
-  background-color: #0a0a0a;
+  background-color: #212121;
 }
 .home__data {
   align-self: center;
@@ -195,7 +195,7 @@ img {
   margin-bottom: var(--mb-5);
 }
 .home__title-color {
-  color: var(--first-color);
+  color: #00f050;
 }
 .home__social {
   display: flex;
@@ -208,7 +208,7 @@ img {
   color: var(--second-color);
 }
 .home__social-icon:hover {
-  color: var(--first-color);
+  color: #00f050;
 }
 .home__img {
   position: absolute;
@@ -226,8 +226,8 @@ img {
 /*BUTTONS*/
 .button {
   display: inline-block;
-  background-color: var(--first-color);
-  color: #fff;
+  background-color: #00f050;
+  color: #212121;
   padding: 0.75rem 2.5rem;
   font-weight: var(--font-semi);
   border-radius: 0.5rem;
@@ -278,7 +278,7 @@ img {
 .skills__icon {
   font-size: 2rem;
   margin-right: var(--mb-2);
-  color: var(--first-color);
+  color: #dedede;
 }
 .skills__names {
   display: flex;
@@ -288,7 +288,7 @@ img {
   position: absolute;
   left: 0;
   bottom: 0;
-  background-color: var(--first-color);
+  background-color: #00f050;
   height: 0.25rem;
   border-radius: 0.5rem;
   z-index: var(--z-back);
@@ -354,12 +354,12 @@ img {
 }
 .work__link {
   display: inline-block;
-  color: var(--first-color);
+  color: #00f050;
   text-decoration: none;
   font-weight: 500;
   font-size: 0.9rem;
   padding: 0.5rem 1rem;
-  border: 1px solid var(--first-color);
+  border: 1px solid #00f050;
   border-radius: 0.25rem;
   transition: all 0.3s ease;
 }
@@ -381,7 +381,7 @@ img {
 .contact__info h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: var(--first-color);
+  color: #00f050;
 }
 
 .contact__info p {
@@ -412,13 +412,13 @@ img {
 
 .contact__item i {
   font-size: 1.5rem;
-  color: var(--first-color);
+  color: #00f050;
 }
 
 .contact__item h4 {
   margin: 0;
   font-size: 1rem;
-  color: var(--first-color);
+  color: #00f050;
 }
 
 .contact__item a {
@@ -429,7 +429,106 @@ img {
 }
 
 .contact__item a:hover {
-  color: var(--first-color);
+  color: #00f050;
+}
+
+/* ===== PROJECTS WINDOW STYLE =====*/
+.projects-window {
+  position: relative;
+  background: #212121;
+  border: 2px solid #00f050;
+  border-radius: 8px;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+  box-shadow: 0 0 20px rgba(0, 240, 80, 0.3);
+}
+
+.projects-window::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 30px;
+  background: linear-gradient(90deg, #00f050, #00cc44);
+  border-radius: 6px 6px 0 0;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.projects-window::after {
+  content: 'Projects.exe';
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  color: #212121;
+  font-weight: bold;
+  font-size: 0.9rem;
+  z-index: 1;
+}
+
+/* ===== SIMPLE SKILLS =====*/
+.skills__simple {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.skill__item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.skill__item:hover {
+  background: rgba(0, 240, 80, 0.1);
+  transform: translateY(-2px);
+}
+
+.skill__item .skills__icon {
+  font-size: 2rem;
+  color: #dedede;
+}
+
+.skill__item .skills__name {
+  font-weight: 500;
+  color: #dedede;
+}
+
+/* ===== EXPANDABLE NAV =====*/
+.nav__expand {
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-left: var(--mb-2);
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+.nav__expand:hover {
+  transform: scale(1.1);
+}
+
+.nav__expand.rotated i {
+  transform: rotate(180deg);
+}
+
+/* ===== CONTACT NOTE =====*/
+.contact__note {
+  background: rgba(0, 240, 80, 0.1);
+  border: 1px solid #00f050;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  color: #dedede;
+  font-style: italic;
 }
 
 .contact__form {
