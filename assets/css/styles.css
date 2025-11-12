@@ -112,8 +112,7 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: var(--second-color);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  background-color: #212121;
 }
 
 /*===== NAV =====*/
@@ -124,36 +123,37 @@ img {
   align-items: center;
   font-weight: var(--font-semi);
 }
-@media screen and (max-width: 767px) {
-  .nav__menu {
-    position: fixed;
-    top: var(--header-height);
-    right: -100%;
-    width: 80%;
-    height: 100%;
-    padding: 2rem;
-    background-color: var(--second-color);
-    transition: 0.5s;
-  }
+
+/* Always show menu as drawer */
+.nav__menu {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 300px;
+  height: 100vh;
+  padding: 5rem 2rem 2rem;
+  background-color: #212121;
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+  transition: right 0.3s ease;
+  z-index: 1000;
 }
 .nav__item {
   margin-bottom: var(--mb-4);
 }
 .nav__link {
   position: relative;
-  color: #fff;
+  color: #dedede;
+  font-size: 1.1rem;
+  display: block;
+  padding: 0.75rem 0;
+  transition: color 0.3s ease;
 }
 .nav__link:hover {
-  position: relative;
+  color: #00f050;
 }
-.nav__link:hover::after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 0.18rem;
-  left: 0;
-  top: 2rem;
-  background-color: #00f050;
+.nav__link.active-link {
+  color: #00f050;
+  font-weight: 600;
 }
 .nav__logo {
   color: #fff;
@@ -162,17 +162,12 @@ img {
   color: #fff;
   font-size: 1.5rem;
   cursor: pointer;
+  display: block !important;
 }
 
 /*Active menu*/
-.active-link::after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 0.18rem;
-  left: 0;
-  top: 2rem;
-  background-color: #00f050;
+.active-link {
+  color: #00f050 !important;
 }
 
 /*=== Show menu ===*/
@@ -315,7 +310,6 @@ img {
 }
 .work__img {
   position: relative;
-  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
   border-radius: 0.5rem;
   overflow: hidden;
   cursor: pointer;
@@ -432,49 +426,24 @@ img {
   color: #00f050;
 }
 
-/* ===== PROJECTS WINDOW STYLE =====*/
-.projects-window {
-  position: relative;
-  background: #212121;
-  border: 2px solid #00f050;
-  border-radius: 8px;
-  padding: 2rem;
-  margin: 2rem auto;
-  max-width: 1200px;
-  box-shadow: 0 0 20px rgba(0, 240, 80, 0.3);
-}
 
-.projects-window::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 30px;
-  background: linear-gradient(90deg, #00f050, #00cc44);
-  border-radius: 6px 6px 0 0;
-  display: flex;
-  align-items: center;
-  padding: 0 1rem;
-}
-
-.projects-window::after {
-  content: 'Projects.exe';
-  position: absolute;
-  top: 5px;
-  left: 10px;
-  color: #212121;
-  font-weight: bold;
-  font-size: 0.9rem;
-  z-index: 1;
+/* ===== SKILLS CATEGORIES =====*/
+.skills__category {
+  color: #00f050;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 2rem 0 1rem 0;
+  text-align: left;
+  border-bottom: 1px solid #00f050;
+  padding-bottom: 0.5rem;
 }
 
 /* ===== SIMPLE SKILLS =====*/
 .skills__simple {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
 
 .skill__item {
@@ -485,40 +454,28 @@ img {
   background: rgba(255, 255, 255, 0.05);
   border-radius: 8px;
   transition: all 0.3s ease;
+  border: 1px solid transparent;
 }
 
 .skill__item:hover {
   background: rgba(0, 240, 80, 0.1);
   transform: translateY(-2px);
+  border-color: #00f050;
 }
 
-.skill__item .skills__icon {
-  font-size: 2rem;
-  color: #dedede;
+.skill__item .skills__icon-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 6px;
 }
 
 .skill__item .skills__name {
   font-weight: 500;
   color: #dedede;
+  font-size: 0.95rem;
 }
 
-/* ===== EXPANDABLE NAV =====*/
-.nav__expand {
-  color: #fff;
-  font-size: 1.2rem;
-  cursor: pointer;
-  margin-left: var(--mb-2);
-  transition: transform 0.3s ease;
-  display: block;
-}
-
-.nav__expand:hover {
-  transform: scale(1.1);
-}
-
-.nav__expand.rotated i {
-  transform: rotate(180deg);
-}
 
 /* ===== CONTACT NOTE =====*/
 .contact__note {
@@ -529,6 +486,87 @@ img {
   text-align: center;
   color: #dedede;
   font-style: italic;
+}
+
+/* ===== NAV CLOSE BUTTON =====*/
+.nav__close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: #dedede;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav__close:hover {
+  color: #00f050;
+}
+
+/* ===== EXPERIENCE =====*/
+.experience__container {
+  row-gap: 2rem;
+}
+
+.experience__content {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  column-gap: 1.875rem;
+}
+
+.experience__title {
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-1);
+  color: #00f050;
+}
+
+.experience__subtitle {
+  display: inline-block;
+  color: #dedede;
+  margin-bottom: var(--mb-2);
+}
+
+.experience__calendar {
+  font-size: var(--smaller-font-size);
+  color: #dedede;
+  margin-bottom: var(--mb-2);
+}
+
+.experience__calendar i {
+  color: #00f050;
+  margin-right: var(--mb-1);
+}
+
+.experience__rounder {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: #00f050;
+  border-radius: 50%;
+}
+
+.experience__line {
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: #00f050;
+  transform: translate(6px, -7px);
+}
+
+.experience__list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.experience__list li {
+  margin-bottom: var(--mb-1);
+  color: #dedede;
+}
+
+.experience__list li:before {
+  content: "▹";
+  color: #00f050;
+  margin-right: var(--mb-1);
 }
 
 .contact__form {
@@ -569,8 +607,8 @@ img {
 
 /* ===== FOOTER =====*/
 .footer {
-  background-color: var(--second-color);
-  color: #fff;
+  background-color: #212121;
+  color: #dedede;
   text-align: center;
   font-weight: var(--font-semi);
   padding: 2rem 0;
@@ -661,20 +699,6 @@ img {
   }
   .nav {
     height: calc(var(--header-height) + 1.5rem);
-  }
-  .nav__list {
-    display: flex;
-    padding-top: 0;
-  }
-  .nav__item {
-    margin-left: var(--mb-6);
-    margin-bottom: 0;
-  }
-  .nav__toggle {
-    display: none;
-  }
-  .nav__link {
-    color: #fff;
   }
   .home {
     padding: 8rem 0 2rem;

@@ -1,16 +1,3 @@
-/*===== MENU SHOW =====*/
-const showMenu = (toggleId, navId) =>{
-    const toggle = document.getElementById(toggleId),
-    nav = document.getElementById(navId)
-
-    if(toggle && nav){
-        toggle.addEventListener('click', ()=>{
-            nav.classList.toggle('show')
-        })
-    }
-}
-showMenu('nav-toggle','nav-menu')
-
 /*==================== REMOVE MENU MOBILE ====================*/
 const navLink = document.querySelectorAll('.nav__link')
 
@@ -56,13 +43,26 @@ sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img', {delay: 40
 sr.reveal('.home__social-icon', { interval: 200});
 sr.reveal('.skills__data, .work__img, .contact__input', {interval: 200});
 
-/*==================== EXPANDABLE NAV MENU ====================*/
-const navExpand = document.getElementById('nav-expand');
+/*==================== DRAWER NAV MENU ====================*/
+const navToggle = document.getElementById('nav-toggle');
+const navClose = document.getElementById('nav-close');
 const navMenu = document.getElementById('nav-menu');
 
-if (navExpand && navMenu) {
-    navExpand.addEventListener('click', () => {
+if (navToggle && navMenu) {
+    navToggle.addEventListener('click', () => {
         navMenu.classList.toggle('show');
-        navExpand.classList.toggle('rotated');
     });
 }
+
+if (navClose && navMenu) {
+    navClose.addEventListener('click', () => {
+        navMenu.classList.remove('show');
+    });
+}
+
+// Close drawer when clicking outside
+document.addEventListener('click', (e) => {
+    if (navMenu && !navMenu.contains(e.target) && !navToggle.contains(e.target)) {
+        navMenu.classList.remove('show');
+    }
+});
