@@ -7,10 +7,16 @@
 
     <link rel="stylesheet" href="assets/css/styles.css">
 
-    <!-- =====BOX ICONS===== -->
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-
     <title>Nawroz Ali Alamdost - Software Developer</title>
+    <meta property="og:title" content="Nawroz Ali Alamdost - Software Developer">
+    <meta property="og:description" content="Hi! I'm Nawroz Ali Alamdost. A creative Software Developer with 2+ years of experience in building high-performance, scalable, and responsive web solutions">
+    <meta property="og:image" content="preview.png">
+    <meta property="og:url" content="https://nawroz711.github.io/my-portfolio/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nawroz Ali Alamdost - Software Developer">
+    <meta name="twitter:description" content="Hi! I'm Nawroz Ali Alamdost. A creative Software Developer with 2+ years of experience in building high-performance, scalable, and responsive web solutions">
+    <meta name="twitter:image" content="preview.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
@@ -18,13 +24,10 @@
     <!--===== HEADER =====-->
     <header class="l-header">
         <nav class="nav bd-grid">
-            <div>
-                <a href="#" class="nav__logo">Nawroz Ali</a>
-            </div>
 
             <div class="nav__menu" id="nav-menu">
                 <div class="nav__close" id="nav-close">
-                    <i class='bx bx-x'></i>
+                    <i class='fas fa-times'></i>
                 </div>
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
@@ -36,7 +39,7 @@
             </div>
 
             <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-menu'></i>
+                <i class='fas fa-bars' style="float: end;"></i>
             </div>
         </nav>
     </header>
@@ -45,98 +48,36 @@
         <!--===== HOME =====-->
         <section class="home bd-grid" id="home">
             <div class="home__data">
-                <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Nawroz Ali</span><br> Software
-                    Developer</h1>
+                <h1 class="home__title"><span class="home__title-color">Software</span>
+                    <div class="home__title-second">Developer</div></h1>
 
-                <a href="src/assets/cv/Nawroz_CV.pdf" download class="button">Download CV</a>
+                <div class="home__intro">
+                    <span>Hi! I'm <span>Nawroz Ali Alamdost</span>. A creative Software Developer with 2+ years of
+                        experience in building
+                        high-performance, scalable, and responsive web solutions</span>
+                </div>
+                <a href="src/assets/cv/Nawroz_CV.pdf" target="_blank" style="margin-top: 4vh;" download
+                    class="button">Download CV</a>
             </div>
 
         </section>
 
         <!--===== ABOUT =====-->
         <section class="about section " id="about">
-            <h2 class="section-title">About</h2>
-
-            <div class="about__container bd-grid">
-                <div class="about__img">
-                    <div class="about-code">
-                        <div class="code-window">
-                            <div class="code-header">
-                                <div class="code-dots">
-                                    <span class="dot red"></span>
-                                    <span class="dot yellow"></span>
-                                    <span class="dot green"></span>
-                                </div>
-                            </div>
-             
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <h2 class="about__subtitle">I'am Nawroz Ali Alamdost</h2>
-                    <p class="about__text">A creative Software Developer with 2+ years of experience in building
-                        high-performance, scalable, and responsive web solutions. I specialize in full-stack development
-                        using modern technologies like React, Vue.js, Laravel, and PostgreSQL. Passionate about creating
-                        efficient, user-friendly applications that solve real-world problems.</p>
-                </div>
-            </div>
-        </section>
-
-        <!--===== EXPERIENCE =====-->
-        <section class="experience section" id="experience">
-            <h2 class="section-title">Experience</h2>
-
-            <div class="experience__container bd-grid">
-                <div class="experience__content">
-                    <div class="experience__data">
-                        <h3 class="experience__title">Software Developer</h3>
-                        <span class="experience__subtitle">Al-Hawa Technology, Kabul - Afghanistan</span>
-                        <div class="experience__calendar">
-                            <i class='bx bx-calendar'></i>
-                            July 2023 - Present
-                        </div>
-                    </div>
-
-                    <div>
-                        <span class="experience__rounder"></span>
-                        <span class="experience__line"></span>
-                    </div>
-                </div>
-
-                <div class="experience__content">
-                    <div></div>
-
-                    <div>
-                        <span class="experience__rounder"></span>
-                        <span class="experience__line"></span>
-                    </div>
-
-                    <div class="experience__data">
-                        <h3 class="experience__title">Key Responsibilities</h3>
-                        <ul class="experience__list">
-                            <li>Developing and maintaining frontend & backend functionality of web applications</li>
-                            <li>Participating in discussions with clients to clarify their requirements</li>
-                            <li>Providing guidance to other team members on software development issues</li>
-                            <li>Developing web applications with consistent look and feel across all web properties</li>
-                            <li>Identifying and correcting software deficiencies</li>
-                            <li>Designing prototypes for apps and websites</li>
-                            <li>Performing code reviews of source code submitted by other team members</li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="bd-grid">
+                <span class="about__text">
+                    I believe in a user centered design approach, ensuring that every project I work on is tailored
+                    to meet the specific needs of its users.
+                </span>
             </div>
         </section>
 
         <!--===== SKILLS =====-->
         <section class="skills section" id="skills">
-            <h2 class="section-title">Skills</h2>
 
             <div class="skills__container bd-grid">
                 <div>
-                    <h2 class="skills__subtitle">Profesional Skills</h2>
-                    <p class="skills__text">Proficient in modern web development technologies with expertise in both
-                        frontend and backend development.</p>
+                    <h2 class="skills__subtitle">MY STACK</h2>
 
                     <!-- Frontend Skills -->
                     <h3 class="skills__category">Frontend</h3>
@@ -163,7 +104,7 @@
                         </div>
                         <div class="skill__item">
                             <img src="src/assets/icons/tailwind.png" alt="Tailwind CSS" class="skills__icon-img">
-                            <span class="skills__name">Tailwind CSS</span>
+                            <span class="skills__name">Tailwind</span>
                         </div>
                         <div class="skill__item">
                             <img src="src/assets/icons/Bootstrap.png" alt="Tailwind CSS" class="skills__icon-img">
@@ -204,59 +145,63 @@
             </div>
         </section>
 
+        <!--===== EXPERIENCE =====-->
+        <section class="experience section" id="experience">
+
+            <div class="experience__container bd-grid">
+                <h2 class="skills__subtitle">EXPERIENCE</h2>
+                <div class="experience__content">
+                    <div class="experience__data">
+                        <h2 class="experience__title">Software Developer</h2>
+                        <span class="experience__subtitle">Al-Hawa Technology, Kabul - Afghanistan</span>
+                        <div class="experience__calendar">
+                            July 2023 - Present
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!--===== PROJECTS =====-->
         <section class="work section" id="work">
-            <h2 class="section-title">Projects</h2>
-
             <div class="work__container bd-grid">
-                <a href="https://www.baashga.com" target="_blank" class="work__img">
-                    <img src="https://picsum.photos/400/250?random=1" alt="Baashga - Gym Management System">
-                    <div class="work__overlay">
-                        <h3>Baashga</h3>
-                        <p>Gym management system</p>
-                        <span class="work__link">www.baashga.com</span>
+                <h2 class="skills__subtitle work__title">PROJECTS</h2>
+                <div class="work__card">
+                    <div class="work__content">
+                        <h3>Baashga <a href="https://baashga.com/" target="_blank" class="work__link"><i class="fas fa-external-link-alt"></i></a></h3>
+                        <p>A comprehensive gym management platform that helps gyms streamline operations, manage memberships, track workouts, and engage with clients.</p>
                     </div>
-                </a>
-                <a href="https://www.karwwan.com" target="_blank" class="work__img">
-                    <img src="https://picsum.photos/400/250?random=2" alt="Karwwan - Car Marketplace">
-                    <div class="work__overlay">
-                        <h3>Karwwan</h3>
-                        <p>Car marketplace platform</p>
-                        <span class="work__link">www.karwwan.com</span>
+                </div>
+                <div class="work__card">
+                    <div class="work__content">
+                        <h3>Karwwan <a href="https://www.karwwan.com" target="_blank" class="work__link"><i class="fas fa-external-link-alt"></i></a></h3>
+                        <p>An innovative car marketplace that connects buyers and sellers, featuring advanced search filters, vehicle listings.</p>
                     </div>
-                </a>
-                <a href="https://www.emllak.com" target="_blank" class="work__img">
-                    <img src="https://picsum.photos/400/250?random=3" alt="Emllak - Real Estate Platform">
-                    <div class="work__overlay">
-                        <h3>Emllak</h3>
-                        <p>Real estate platform</p>
-                        <span class="work__link">www.emllak.com</span>
+                </div>
+                <div class="work__card">
+                    <div class="work__content">
+                        <h3>Emllak <a href="https://www.emllak.com" target="_blank" class="work__link"><i class="fas fa-external-link-alt"></i></a></h3>
+                        <p>A modern real estate platform offering property listings, and personalized recommendations to help users find their dream homes.</p>
                     </div>
-                </a>
-                <a href="https://www.rms.com" target="_blank" class="work__img">
-                    <img src="https://picsum.photos/400/250?random=4" alt="OXUS Car Rental">
-                    <div class="work__overlay">
-                        <h3>OXUS Car Rental</h3>
-                        <p>UK-based car rental</p>
-                        <span class="work__link">www.rms.com</span>
+                </div>
+                <div class="work__card">
+                    <div class="work__content">
+                        <h3>OXUS Car Rental <a href="https://www.rms.com" target="_blank" class="work__link"><i class="fas fa-external-link-alt"></i></a></h3>
+                        <p>A reliable car rental service based in the UK, providing a wide range of vehicles, flexible booking options, and exceptional customer service for all travel needs.</p>
                     </div>
-                </a>
-                <a href="https://www.alhawas2p.com" target="_blank" class="work__img">
-                    <img src="https://picsum.photos/400/250?random=5" alt="S2P Procurement System">
-                    <div class="work__overlay">
-                        <h3>S2P</h3>
-                        <p>Procurement management</p>
-                        <span class="work__link">www.alhawas2p.com</span>
+                </div>
+                <div class="work__card">
+                    <div class="work__content">
+                        <h3>S2P <a href="https://alhawas2p.com/" target="_blank" class="work__link"><i class="fas fa-external-link-alt"></i></a></h3>
+                        <p>A sophisticated procurement management system that automates purchasing processes, manages supplier relationships, and provides analytics for efficient business operations.</p>
                     </div>
-                </a>
-                <a href="https://github.com/nawroz" target="_blank" class="work__img">
-                    <img src="https://picsum.photos/400/250?random=6" alt="GitHub Repository">
-                    <div class="work__overlay">
-                        <h3>More Projects</h3>
-                        <p>GitHub repositories</p>
-                        <span class="work__link">github.com/nawroz</span>
+                </div>
+                <div class="work__card">
+                    <div class="work__content">
+                        <h3>Daraye <a href="https://daraye.com" target="_blank" class="work__link"><i class="fas fa-external-link-alt"></i></a></h3>
+                        <p>An advanced inventory management system that tracks stock levels, manages orders, generates reports, and optimizes supply chain operations for businesses of all sizes.</p>
                     </div>
-                </a>
+                </div>
             </div>
         </section>
 
@@ -264,11 +209,12 @@
 
     <!--===== FOOTER =====-->
     <footer class="footer">
-        <p class="footer__title">Nawroz Ali Alamdost</p>
         <div class="footer__social">
-            <a href="https://github.com/Nawroz711" target="_blank" class="footer__icon"><i class='bx bxl-github'></i></a>
-            <a href="https://af.linkedin.com/in/nawroz-ali-alamdost-7bb832202" target="_blank" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
-            <a href="mailto:na.alamdost@gmail.com" class="footer__icon"><i class='bx bx-envelope'></i></a>
+            <a href="https://github.com/Nawroz711" target="_blank" class="footer__icon"><i
+                    class='fab fa-github'></i></a>
+            <a href="https://af.linkedin.com/in/nawroz-ali-alamdost-7bb832202" target="_blank" class="footer__icon"><i
+                    class='fab fa-linkedin'></i></a>
+            <a href="mailto:na.alamdost@gmail.com" class="footer__icon"><i class='fas fa-envelope'></i></a>
         </div>
         <p class="footer__copy">&#169; 2024 Nawroz Ali Alamdost. All rights reserved</p>
     </footer>
@@ -276,6 +222,9 @@
 
     <!--===== SCROLL REVEAL =====-->
     <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== LINK PREVIEW JS =====-->
+    <script src="https://unpkg.com/link-preview-js@3.0.4/build/index.js"></script>
 
     <!--===== MAIN JS =====-->
     <script src="assets/js/main.js"></script>
