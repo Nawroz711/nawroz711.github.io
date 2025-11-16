@@ -1,10 +1,8 @@
 /*==================== REMOVE MENU MOBILE ====================*/
-const navLink = document.querySelectorAll('.nav__link')
+const navLink = document.querySelectorAll('.nav-link')
 
 function linkAction(){
-    const navMenu = document.getElementById('nav-menu')
-    // When we click on each nav__link, we remove the show-menu class
-    navMenu.classList.remove('show')
+    // Bootstrap handles closing the navbar collapse on link click
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
@@ -18,51 +16,17 @@ const scrollActive = () =>{
         const sectionHeight = current.offsetHeight,
               sectionTop = current.offsetTop - 58,
               sectionId = current.getAttribute('id'),
-              sectionsClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']')
+              sectionsClass = document.querySelector('.navbar-nav a[href*=' + sectionId + ']')
 
         if(scrollDown > sectionTop && scrollDown <= sectionTop + sectionHeight){
-            sectionsClass.classList.add('active-link')
+            sectionsClass.classList.add('active')
         }else{
-            sectionsClass.classList.remove('active-link')
+            sectionsClass.classList.remove('active')
         }
     })
 }
 window.addEventListener('scroll', scrollActive)
 
-/*===== SCROLL REVEAL ANIMATION =====*/
-const sr = ScrollReveal({
-    origin: 'top',
-    distance: '60px',
-    duration: 2000,
-    delay: 200,
-//     reset: true
-});
+/*===== AOS ANIMATION =====*/
+AOS.init();
 
-sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text', {});
-sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img', {delay: 400});
-sr.reveal('.home__social-icon', { interval: 200});
-sr.reveal('.skills__data, .work__img, .contact__input', {interval: 200});
-
-/*==================== DRAWER NAV MENU ====================*/
-const navToggle = document.getElementById('nav-toggle');
-const navClose = document.getElementById('nav-close');
-const navMenu = document.getElementById('nav-menu');
-
-if (navToggle && navMenu) {
-    navToggle.addEventListener('click', () => {
-        navMenu.classList.toggle('show');
-    });
-}
-
-if (navClose && navMenu) {
-    navClose.addEventListener('click', () => {
-        navMenu.classList.remove('show');
-    });
-}
-
-// Close drawer when clicking outside
-document.addEventListener('click', (e) => {
-    if (navMenu && !navMenu.contains(e.target) && !navToggle.contains(e.target)) {
-        navMenu.classList.remove('show');
-    }
-});
